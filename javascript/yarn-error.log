@@ -1,0 +1,36 @@
+Arguments: 
+  /home/erioluwa/.nvm/versions/node/v21.5.0/bin/node /home/erioluwa/.cache/node/corepack/yarn/1.22.19/bin/yarn.js init
+
+PATH: 
+  /home/erioluwa/.pyenv/plugins/pyenv-virtualenv/shims:/home/erioluwa/.poetry/bin:/home/erioluwa/.pyenv/shims:/home/erioluwa/.local/bin:/home/erioluwa/.pnpm-global/bin:/home/erioluwa/.pyenv/plugins/pyenv-virtualenv/shims:/home/erioluwa/.cargo/bin:/home/erioluwa/.poetry/bin:/home/erioluwa/.pyenv/bin:/home/erioluwa/.nvm/versions/node/v21.5.0/bin:/home/erioluwa/.local/bin:/home/erioluwa/.pnpm-global/bin:/home/erioluwa/.sdkman/candidates/java/current/bin:/home/erioluwa/.sdkman/candidates/gradle/current/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/erioluwa/Android/Sdk/emulator:/home/erioluwa/Android/Sdk/platform-tools:/home/erioluwa/.fzf/bin:/usr/local/go/bin:/home/erioluwa/.local/scripts/:/home/erioluwa/Android/Sdk/emulator:/home/erioluwa/Android/Sdk/platform-tools:/usr/local/go/bin:/home/erioluwa/.local/scripts/
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  21.5.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/home/erioluwa/.cache/node/corepack/yarn/1.22.19/lib/cli.js:137150:13)
+      at Interface.emit (node:events:519:28)
+      at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1125:18)
+      at ReadStream.onkeypress (node:internal/readline/interface:264:20)
+      at ReadStream.emit (node:events:519:28)
+      at emitKeys (node:internal/readline/utils:371:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+      at ReadStream.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

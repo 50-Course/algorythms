@@ -1,0 +1,60 @@
+1. Graph Transversals
+    - Finding paths
+    - Implement DFS and BFS
+2. QuickSort
+3. Backtracking
+    - N-Queens
+    - Sudoku
+    - Permutations
+    - Subsets
+    - Letter Combinations of a Phone Number
+    - Palindrome Partitioning
+    - Combination Sum
+    - Generate Parentheses
+4. Dynamic Programming
+    - Fibonacci
+    - Coin Change
+    - Longest Common Subsequence
+    - Longest Increasing Subsequence
+    - Edit Distance
+    - Knapsack
+    - Matrix Chain Multiplication
+    - Palindromic Substrings
+    - Word Break
+    - Word Break II
+    - Unique Paths
+    - Unique Paths II
+    - Climbing Stairs
+    - Min Cost Climbing Stairs
+    - House Robber
+    - House Robber II
+    - Decode Ways
+    - Unique Binary Search Trees
+    - Unique Binary Search Trees II
+    - Integer Break
+    - Partition Equal Subset Sum
+    - Maximum Subarray
+    - Maximum Product Subarray
+    - Maximum Length of Pair Chain
+    - Maximum Length of Repeated Subarray
+    - Maximum Sum of 3 Non-Overlapping Subarrays
+    - Russian Doll Envelopes
+    - Longest Palindromic Subsequence
+    - Longest Palindromic Substring
+    - Longest Valid Parentheses
+    - Burst Balloons
+    - Minimum Path Sum
+    - Minimum Falling Path Sum
+    - Unique Paths III
+    - Cherry Pickup
+    - Knight Dialer
+    - Largest Sum of Averages
+    - Split Array Largest Sum
+    - Minimum Score Triangulation of Polygon
+    - Stone Game
+    - Predict the Winner
+    - Card Game
+    - Out of Boundary Paths
+    - Number of Dice Rolls With Target Sum
+    - Knight Probability in Chessboard
+

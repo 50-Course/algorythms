@@ -1,0 +1,13 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "alogrithms",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+        "test": "jest"
+    },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
