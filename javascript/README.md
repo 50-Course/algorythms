@@ -1,6 +1,9 @@
 1. Graph Transversals
     - Finding paths
     - Implement DFS and BFS
+    - Prim's algorithhm
+    - Kruskal's algorithm
+    - Minimum spanning tree
 2. QuickSort
 3. Backtracking
     - N-Queens
