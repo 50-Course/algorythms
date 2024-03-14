@@ -80,7 +80,7 @@ function dfs_match(node, targetNode) {
     return false;
 }
 
-function recursiveDFS_search(node, targetNode) {
+function recursiveDFSMatch(node, targetNode) {
     if (node === null && node === undefined) return false;
     return (node !== null && node !== undefined) ? 
         node.val == targetNode &&
@@ -108,6 +108,7 @@ a.left.left = g;
 b.right = f;
 b.left = e;
 console.log(`BFS Transversal:`, bfs(a));
+console.log(`DFS Transversal:`, dfs(a));
 console.log('*** Tree Includes: Searching for a target with BFS ***');
 console.log(`Searched for: ${'l'} in ${bfs(a)}`, bfs_match(a, 'l'));
 console.log(`Searched for: ${'z'} in ${bfs(a)}`, bfs_match(a, 'z'));
@@ -130,5 +131,5 @@ module.exports = {
     recursiveDFS,
     bfs,
     bfs_match,
-    recursiveDFS_search,
+    recursiveDFSMatch,
 }
