@@ -39,12 +39,12 @@ const threeSum= (node) => {
 // Three sum using the DFS approach iterativvely
 //
 // Uses Data-Right-Left order transversal in otherwords, In-order transbersal
-const threeSumDFS = (node) {
+const threeSumDFS = (node) => {
     let sum = 0;
 
     let stack = new Array(node);
 
-    if (current === null) return 0;
+    if (node === null) return 0;
     while(stack.length > 0) {
         let current = stack.pop()
         sum += current.val;
