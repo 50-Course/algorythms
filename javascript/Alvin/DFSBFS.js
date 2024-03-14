@@ -40,8 +40,8 @@ function bfs(node) {
         let current = queue.shift();
         if (current.val !== null && current.val !== undefined) result.push(current.val);
 
-        if(current.right !== null && current.right !== undefined)  queue.unshift(current.right);
-        if(current.left !== null && current.left !== undefined)  queue.unshift(current.left);
+        if(current.right !== null && current.right !== undefined)  queue.push(current.right);
+        if(current.left !== null && current.left !== undefined)  queue.push(current.left);
         
         
     }
@@ -57,8 +57,8 @@ function bfs_match(node, targetNode) {
         let current = queue.shift();
         if (current.val !== null && current.val !== undefined && current.val === targetNode) return true;
 
-        if(current.right !== null && current.right !== undefined)  queue.unshift(current.right);
-        if(current.left !== null && current.left !== undefined)  queue.unshift(current.left);  
+        if(current.right !== null && current.right !== undefined)  queue.push(current.right);
+        if(current.left !== null && current.left !== undefined)  queue.push(current.left);  
     }
     return false;
 }
@@ -78,10 +78,6 @@ function dfs_match(node, targetNode) {
     }
 
     return false;
-}
-
-function bfs_search(node, targetNode) {
-    return
 }
 
 function recursiveDFS_search(node, targetNode) {
@@ -111,7 +107,7 @@ a.left.right = d;
 a.left.left = g;
 b.right = f;
 b.left = e;
-console.log(bfs(a));
+console.log(`BFS Transversal:`, bfs(a));
 console.log('*** Tree Includes: Searching for a target with BFS ***');
 console.log(`Searched for: ${'l'} in ${bfs(a)}`, bfs_match(a, 'l'));
 console.log(`Searched for: ${'z'} in ${bfs(a)}`, bfs_match(a, 'z'));
