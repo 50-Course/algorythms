@@ -44,7 +44,8 @@ function bfs(node) {
         if(current.left !== null && current.left !== undefined)  queue.push(current.left);
         
         
-    }
+    }const a = new Node(1);
+    let b
     return result;
 }
 
@@ -82,11 +83,8 @@ function dfs_match(node, targetNode) {
 
 function recursiveDFSMatch(node, targetNode) {
     if (node === null && node === undefined) return false;
-    return (node !== null && node !== undefined) ? 
-        node.val == targetNode &&
-        recursiveDFS_search(node.left, targetNode) &&
-        recursiveDFS_search(node.right, targetNode)
-    : false;
+    if (node.val === targetNode) return true;
+    return recursiveDFSMatch(node.left, targetNode) || recursiveDFSMatch(node.right, targetNode);
 }
 
 function recrusiveBFSMatch(node, targetNode) {
@@ -141,6 +139,7 @@ console.log(`Searched for: ${'e'} in ${bfs(a)}`, recrusiveBFSMatch(a, 'e'));
 console.log(`Searched for: ${'f'} in ${bfs(a)}`, recrusiveBFSMatch(a, 'f'));
 
 module.exports = {
+    Node,
     dfs,
     dfs_match,
     recursiveDFS,

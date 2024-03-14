@@ -36,6 +36,25 @@ const threeSum= (node) => {
     return sum;
 }
 
+// Three sum using the DFS approach iterativvely
+//
+// Uses Data-Right-Left order transversal in otherwords, In-order transbersal
+const threeSumDFS = (node) {
+    let sum = 0;
+
+    let stack = new Array(node);
+
+    if (current === null) return 0;
+    while(stack.length > 0) {
+        let current = stack.pop()
+        sum += current.val;
+
+        if (current.right !== null) stack.push(current.right)
+        if (current.left !== null) stack.push(current.left);
+    }
+    return sum;
+}
+
 let a = new Node(1);
 let b = new Node(2);
 let c = new Node(3);
@@ -54,7 +73,11 @@ b.left = e;
 
 
 console.log(threeSum(a));
+console.log(ThreeSum(a));
+console.log(threeSumDFS(a));
 
 module.exports = {
-    ThreeSum
+    ThreeSum,
+    threeSum,
+    threeSumDFS
 }
