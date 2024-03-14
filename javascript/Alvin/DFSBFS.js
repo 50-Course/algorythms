@@ -89,6 +89,13 @@ function recursiveDFSMatch(node, targetNode) {
     : false;
 }
 
+function recrusiveBFSMatch(node, targetNode) {
+    if (node === null) return false;
+    if (node.val === targetNode) return true;
+
+    return recrusiveBFSMatch(node.left, targetNode) || recrusiveBFSMatch(node.right, targetNode);
+}
+
 
 /* Driver code for our tree */
 let a = new Node('a');
@@ -125,6 +132,14 @@ console.log(`Searched for: ${'g'} in ${dfs(a)}`, dfs_match(a, 'g'));
 console.log(`Searched for: ${'e'} in ${dfs(a)}`, dfs_match(a, 'e'));
 console.log(`Searched for: ${'f'} in ${dfs(a)}`, dfs_match(a, 'f'));
 console.log("**********************")
+console.log('*** Tree Includes: Recursively search for a target with DFS ***');
+console.log(`Searched for: ${'z'} in ${bfs(a)}`, recrusiveBFSMatch(a, 'z'));
+console.log(`Searched for: ${'l'} in ${bfs(a)}`, recrusiveBFSMatch(a, 'l'));
+console.log(`Searched for: ${'c'} in ${bfs(a)}`, recrusiveBFSMatch(a, 'c'));
+console.log(`Searched for: ${'g'} in ${bfs(a)}`, recrusiveBFSMatch(a, 'g'));
+console.log(`Searched for: ${'e'} in ${bfs(a)}`, recrusiveBFSMatch(a, 'e'));
+console.log(`Searched for: ${'f'} in ${bfs(a)}`, recrusiveBFSMatch(a, 'f'));
+
 module.exports = {
     dfs,
     dfs_match,
@@ -132,4 +147,5 @@ module.exports = {
     bfs,
     bfs_match,
     recursiveDFSMatch,
+    recrusiveBFSMatch
 }
