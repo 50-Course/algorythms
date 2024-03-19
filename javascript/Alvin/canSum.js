@@ -1,6 +1,9 @@
 /** Checks if there are elements in an array that could sum up to a number */
 function canSum(target, someArray, memo = {}) {
   if (target in memo) return memo[target];
+  // if we hit a base case of zero, we return true
+  // however, negative value means there's remainder, which does not sum up to
+  // the targetValue
   if (target === 0) return true;
   if (target < 0) return false;
 
@@ -27,6 +30,6 @@ console.log(canSum(300, [7, 14]));
 console.log(canSum(100, [7, 14]));
 console.log(canSum(5, [5, 10]));
 
-module.exports = {
+export default {
   canSum,
 };
